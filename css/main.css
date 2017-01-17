@@ -1,0 +1,23 @@
+.progress-indicator .wrapper-indicator{
+	width: 200px;
+	height: 15px;
+	background-color: #EEEEEE;
+	display: inline-block;
+	position: relative;
+}
+
+.progress-indicator .indicator{
+	height: 15px;
+	background-color: #009900;
+	display: inline-block;
+	width: 0;
+}
+
+.progress-indicator .indicator-value{
+	position: absolute;
+}
+
+/* Animation */
+.progress-indicator .indicator{
+	transition: width 0.5s linear;
+}
