@@ -7,6 +7,7 @@ function ProgressIndicator(el, options){
 	this.$el = $(el);
 	this.$indicator = this.$el.find('.indicator');
 	this.$indicatorValue = this.$el.find('.indicator-value');
+	this.$target = this.$el.find('.target');
 	this.progress = this.settings.initialValue;
 	this.render();
 	return this;
@@ -31,6 +32,7 @@ ProgressIndicator.prototype.render = function(){
 
 	THIS.$indicator.css('width',indicatorPercentage+'%');
 	THIS.$indicatorValue.text(THIS.progress);
+	THIS.$target.text(THIS.settings.target);
 
 	return THIS;
 };
