@@ -27,6 +27,11 @@ body{
 	top: 15px;
 }
 
+.progress-indicator .text{
+	margin-top: 20px;
+	text-align: center;
+}
+
 /* Animation */
 .progress-indicator .indicator{
 	transition: width 0.5s linear;
